@@ -1,7 +1,12 @@
 {
   "name": "hexo-paste",
-  "displayName": "code_learing",
+  "displayName": "hexo-paste",
   "description": "",
+  "keywords": [
+    "hexo",
+    "plugin",
+    "vscode"
+  ],
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.45.0"
@@ -9,6 +14,11 @@
   "categories": [
     "Other"
   ],
+  "icon": "LanguageCCPP_color_128x.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/vscode-cpptools.git"
+  },
   "activationEvents": [
     "onCommand:extension.pasteImage",
     "onLanguage:markdown"
