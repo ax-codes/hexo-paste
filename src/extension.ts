@@ -4,7 +4,7 @@
  * @Github: https://github.com/GuoXingGitHub
  * @Date: 2020-06-06 15:43:28
  * @LastEditors: ax
- * @LastEditTime: 2020-06-07 16:27:35
+ * @LastEditTime: 2020-06-07 17:43:35
  */
 
 // The module 'vscode' contains the VS Code extensibility API
@@ -251,7 +251,7 @@ class Paster {
         scriptPath,
         imagePath,
       ]);
-      powershell.on("error", function (error) {
+      powershell.on("error", function (error: any) {
         if (error.code === "ENOENT") {
           Logger.showErrorMessage(
             `The powershell command is not in you PATH environment variables. Please add it and retry.`
